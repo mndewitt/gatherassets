@@ -57,7 +57,7 @@ $tags = $doc->getElementsByTagName('img');
 foreach($tags as $t) {
 	$url = $t->getAttribute('src');
 	$id = substr($url, strrpos($url, '/') + 1);
-	$new_img_path = 'img/survey/from-legacy-html/' . $id;
+	$new_img_path = 'img/from-legacy-html/' . $id;
 	copy('http:' . $url, $new_img_path);
 	echo $url . " has been copied to " . $new_img_path . "<br/>";
 }
