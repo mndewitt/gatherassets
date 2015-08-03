@@ -39,7 +39,7 @@ $features = array(
 foreach($features as $f) {
 	$url = "http:" . $f["url"];
 	$title = strpreg_replace('/[ ,]+/', '', $f["title"]);
-	$new_img_path = '/' . $title . '.png';
+	$new_img_path = '/img' . $title . '.png';
 	copy($url, $new_img_path);
 	echo "copied " . $url . " to " . $new_img_path . "<br/>";
 }
@@ -56,7 +56,7 @@ $tags = $doc->getElementsByTagName('img');
 foreach($tags as $t) {
 	$url = $t->getAttribute('src');
 	$id = substr($url, strrpos($url, '/') + 1);
-	$new_img_path = 'wp-content/themes/buildium/assets/img/survey/from-legacy-html/' . $id;
+	$new_img_path = 'img/survey/from-legacy-html/' . $id;
 	copy('http:' . $url, $new_img_path);
 	echo $url . " has been copied to " . $new_img_path . "<br/>";
 }
