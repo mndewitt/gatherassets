@@ -40,7 +40,7 @@ $features = array(
 foreach($features as $f) {
 	$url = "http:" . $f["url"];
 	$title = strpreg_replace('/[ ,]+/', '', $f["title"]);
-	$new_img_path = '/img' . $title . '.png';
+	$new_img_path = '/img/' . $title . '.png';
 	copy($url, $new_img_path);
 	echo "copied " . $url . " to " . $new_img_path . "<br/>";
 }
@@ -59,5 +59,5 @@ foreach($tags as $t) {
 	$id = substr($url, strrpos($url, '/') + 1);
 	$new_img_path = 'img/from-legacy-html/' . $id;
 	copy('http:' . $url, $new_img_path);
-	echo $url . " has been copied to " . $new_img_path . "<br/>";
+	echo "copied " . $url . " to " . $new_img_path . "<br/>";
 }
