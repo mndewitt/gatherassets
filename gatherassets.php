@@ -27,14 +27,15 @@ if ($matches) {
 */
 
 $features = array(
-				array( 
-					"url" => "//cdn.mycdn.com/img/76155488/5d9b9ad887dc47b48ffabaaa47ee1ec3.png",
-					"title" => "My awesome file name",
-				),
-				array( 
-					"url" => "//cdn.mycdn.com/img/76155488/46eee5697edf48458296480f63ceb6b9.png",
-					"title" => "My awesome file name numero dos",
-			);
+		array( 
+			"url" => "//cdn.mycdn.com/img/76155488/5d9b9ad887dc47b48ffabaaa47ee1ec3.png",
+			"title" => "My awesome file name",
+		),
+		array( 
+			"url" => "//cdn.mycdn.com/img/76155488/46eee5697edf48458296480f63ceb6b9.png",
+			"title" => "My awesome file name numero dos"
+		)
+	);
 
 foreach($features as $f) {
 	$url = "http:" . $f["url"];
