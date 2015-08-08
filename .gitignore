@@ -1,0 +1,5 @@
+#ignore files and img directory used for testing
+
+img/
+test.css
+test.html
