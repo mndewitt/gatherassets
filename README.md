@@ -1,5 +1,5 @@
 ## gatherassets
-I had a bunch of legacy code that needed migrating.  The images all needed to move from one CDN to another, and the originals were long gone.  This class will find those remote URLS in css, less, sass, html, or php files and copy them to a local directory of your choice.  
+I had a bunch of legacy code that needed migrating.  The images all needed to move from one CDN to another, and the originals were long gone.  This class will find those remote URL's in css, less, sass, html, or php files and copy them to a local directory of your choice.  
 
 ###Usage
 
