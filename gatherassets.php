@@ -45,7 +45,7 @@ class gatherAssets {
 	}
 
 	/*
-	** Copies files from remote urls found in the img tags wihin an html or php file
+	** Copies files from remote urls found in the img tags within an html or php file
 	** @param string pathToFile
 	** @return void
 	*/
