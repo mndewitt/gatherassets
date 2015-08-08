@@ -6,13 +6,13 @@ I had a bunch of legacy code that needed migrating.  The images all needed to mo
 ```php
 
 //Establish the class and declare the target directory in the constructor
-$gatherAssets = new gatherAssets('img/');
+$gatherAssets = new gatherAssets('assets/img/');
 
 //Copy any images contained in url() arguments in CSS, LESS, or SASS files
-$gatherAssets->fromCss('test.css');
+$gatherAssets->fromCss('path/to/test.css');
 
 //Copy any images contained in the src attribute of <img> tags in html or php files
-$gatherAssets->fromHtml('test.html');
+$gatherAssets->fromHtml('path/to/test.html');
 
 //Easily clean the target URL directory if you made a mistake or want to start over
 $gatherAssets->cleanDir();
